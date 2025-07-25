@@ -19,13 +19,12 @@
     <main class="main-content">
         <section class="hero-text">
             <h1 class="headline">
-                <span class="headline-main">Your Personal</span> <span class="headline-accent">AI Dance<br>and Fitness Coach</span>
+                <span class="headline-main">Your Personal<br>AI Fitness Coach</span> 
             </h1>
             <p class="description">
-                Learn to dance like a pro, from the comfort of your own home.<br>
-                Our groundbreaking web app combines the power of artificial intelligence with a passion for dance, yoga, and cardio. Get ready to embark on an exhilarating journey that will transform you into a confident and skilled dancer, while also improving your fitness level.
+                Achieve your fitness goals with RhythmFit, your AI powered personal trainer that tracks posture and movement in real time. No wearables, no hassle, just smart, camera based coaching at your fingertips.
             </p>
-            <a href="{{ url_for('select') }}" class="cta-btn">Get started →</a>
+            <a href="{{ url_for('auth.signup') }}" class="cta-btn">Get started →</a>
             <div class="social-icons">
                 <span>Follow us</span>
                 <a href="#"><img src="{{ url_for('static', filename='icons/twitter_light.svg') }}" alt="Twitter"></a>

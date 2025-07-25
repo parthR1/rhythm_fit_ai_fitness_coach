@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RhythmFit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="{{ url_for('static', filename='images/logo_light.svg') }}" alt="RhythmFit Logo" class="logo">
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <section class="hero-text">
+            <h1 class="headline">
+                <span class="headline-main">Your Personal</span> <span class="headline-accent">AI Dance<br>and Fitness Coach</span>
+            </h1>
+            <p class="description">
+                Learn to dance like a pro, from the comfort of your own home.<br>
+                Our groundbreaking web app combines the power of artificial intelligence with a passion for dance, yoga, and cardio. Get ready to embark on an exhilarating journey that will transform you into a confident and skilled dancer, while also improving your fitness level.
+            </p>
+            <a href="{{ url_for('select') }}" class="cta-btn">Get started →</a>
+            <div class="social-icons">
+                <span>Follow us</span>
+                <a href="#"><img src="{{ url_for('static', filename='icons/twitter_light.svg') }}" alt="Twitter"></a>
+                <a href="#"><img src="{{ url_for('static', filename='icons/youtube_light.svg') }}" alt="YouTube"></a>
+                <a href="#"><img src="{{ url_for('static', filename='icons/discord_light.svg') }}" alt="Discord"></a>
+                <a href="#"><img src="{{ url_for('static', filename='icons/linkedin_light.svg') }}" alt="LinkedIn"></a>
+            </div>
+        </section>
+        <section class="hero-image">
+            <img src="{{ url_for('static', filename='images/hero_image.png') }}" alt="Hero" class="rounded-image">
+        </section>
+    </main>
+</body>
+</html>

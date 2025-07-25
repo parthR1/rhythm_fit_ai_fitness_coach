@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>What would you like to learn? | RhythmFit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="/" class="back-arrow">&#8592;</a>
+            <img src="{{ url_for('static', filename='images/logo_light.svg') }}" alt="RhythmFit Logo" class="logo">
+        </div>
+    </nav>
+    <main class="select-main">
+        <h1 class="select-headline">
+            <span class="headline-main">What would you like to learn?</span>
+        </h1>
+        <div class="select-options">
+            <a href="{{ url_for('pose') }}" class="select-option">
+                <img src="{{ url_for('static', filename='images/hero_image.png') }}" alt="Yoga" class="select-image">
+                <div class="select-label">Yoga</div>
+            </a>
+            <div class="select-option">
+                <img src="{{ url_for('static', filename='images/cardio_image.png') }}" alt="Cardio" class="select-image">
+                <div class="select-label">Cardio</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 

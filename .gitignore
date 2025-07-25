@@ -1,1 +1,10 @@
 rhythmFitVenv/
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+*.sqlite3
+oAuth_secrets.json

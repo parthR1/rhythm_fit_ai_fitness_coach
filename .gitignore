@@ -8,3 +8,4 @@ env/
 venv/
 *.sqlite3
 oAuth_secrets.json
+.env

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yoga Pose Detection | RhythmFit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="/select" class="back-arrow">&#8592;</a>
+            <img src="{{ url_for('static', filename='images/logo_light.svg') }}" alt="RhythmFit Logo" class="logo">
+        </div>
+    </nav>
+    <main class="pose-main">
+        <h2>Yoga Pose Detection</h2>
+        <video id="video" class="video-container" autoplay muted></video>
+        <button id="start-btn">Start</button>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+    <script src="{{ url_for('static', filename='js/pose.js') }}"></script>
+</body>
+</html> 

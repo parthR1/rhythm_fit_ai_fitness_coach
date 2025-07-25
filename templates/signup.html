@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign up | RhythmFit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="/" class="back-arrow">&#8592;</a>
+            <img src="{{ url_for('static', filename='images/logo_light.svg') }}" alt="RhythmFit Logo" class="logo">
+        </div>
+    </nav>
+    <main class="auth-main">
+        <h1 class="auth-headline">
+            <span class="headline-main">Sign up</span>
+        </h1>
+        <div class="auth-buttons">
+            <a href="{{ url_for('auth.login') }}" class="auth-btn google-btn">
+                <img src="{{ url_for('static', filename='icons/google_icon.svg') }}" alt="Google" class="auth-icon"> Continue with Google
+            </a>
+            <a href="#" class="auth-btn apple-btn">
+                <img src="{{ url_for('static', filename='icons/apple_icon.svg') }}" alt="Apple" class="auth-icon"> Continue with Apple
+            </a>
+            <div class="auth-divider"><span>or</span></div>
+            <a href="#" class="auth-btn create-btn">Create account</a>
+        </div>
+        <div class="auth-footer">
+            Have an account already? <a href="/login" class="login-link">Log in</a>
+        </div>
+    </main>
+</body>
+</html>
